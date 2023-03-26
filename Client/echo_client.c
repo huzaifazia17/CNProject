@@ -59,8 +59,8 @@ int main(int argc, char **argv)
 	}
 
 	printf("Transmit: \n");
-	while(n=read(0, sbuf, BUFLEN)){	/* get user message */
-	  write(sd, sbuf, n);		/* send it out */
+	while(n=read(0, sbuf, BUFLEN)){	
+	  write(sd, sbuf, n);		
 	  printf("Receive: \n");
 	  bp = rbuf;
 	  bytes_to_read = n;
