@@ -10,8 +10,8 @@
 #include <strings.h>
 
 
-#define SERVER_TCP_PORT 3000	/* well-known port */
-#define BUFLEN		256	/* buffer length */
+#define SERVER_TCP_PORT 3000	
+#define BUFLEN		256	
 
 int echod(int);
 void reaper(int);
@@ -74,7 +74,6 @@ int main(int argc, char **argv)
 	}
 }
 
-/*	echod program	*/
 int echod(int sd)
 {
 	char	*bp, buf[BUFLEN];
@@ -87,7 +86,6 @@ int echod(int sd)
 	return(0);
 }
 
-/*	reaper		*/
 void	reaper(int sig)
 {
 	int	status;
