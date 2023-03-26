@@ -11,8 +11,8 @@
 
 
 
-#define SERVER_TCP_PORT 3000	/* well-known port */
-#define BUFLEN		256	/* buffer length */
+#define SERVER_TCP_PORT 3000	
+#define BUFLEN		256	
 
 int main(int argc, char **argv)
 {
